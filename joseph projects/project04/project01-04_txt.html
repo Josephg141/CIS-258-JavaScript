@@ -6,8 +6,8 @@
       Chapter 1
       Hands-on Project 1-4
 
-      Author: 
-      Date:   
+      Author: Joseph Gjelaj
+      Date:   5/30/24
 
       Filename: index.htm
    -->
@@ -16,7 +16,9 @@
    <title>Hands-on Project 1-4</title>
    <link rel="stylesheet" href="styles.css" />
 </head>
+<script src =project01-04_txt.js>
 
+</script>
 <body>
    <header>
       <h1>
@@ -31,12 +33,24 @@
          <fieldset id="addroptions">
             <legend><span>Choose an address</span></legend>
             <label for="homeoption" id="homeaddr">
-               <div>Home</div>
-               <input type="radio" id="homeoption" name="shippingaddr" />
+               <div>Home</div> 
+               <script>
+                   document.write("<p> "+ homeStreet + "</p>");
+                  document.write("<p> " + homeCity + "</p>");
+                  document.write("<p> " + homeState + "</p>");
+                   document.write("<p> " + homeCode + "</p>");
+        </script>
+               <input type="radio" id="homeoption" name="shippingaddr" onclick="setHomeAddress()" />
             </label>
             <label for="workoption" id="workaddr">
                <div>Work</div>
-               <input type="radio" id="workoption" name="shippingaddr" />
+               <script>
+                  document.write("<p>" + workStreet + "</p>");
+                  document.write("<p>" + workCity + "</p>");
+                  document.write("<p>" + workState + "</p>");
+                  document.write("<p>" + workCode + "</p>");
+              </script>
+               <input type="radio" id="workoption" name="shippingaddr" onclick="setWorkAddress()" />
             </label>
          </fieldset>
          
